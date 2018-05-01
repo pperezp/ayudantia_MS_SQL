@@ -28,9 +28,9 @@ AS BEGIN
 	SELECT * FROM persona_etiqueta;
 END
 
-EXEC add_etiqueta 'profe pato','ñoño' ;
+EXEC add_etiqueta 'profe pato','Ã±oÃ±o' ;
 EXEC add_etiqueta 'profe boris','brigido' ;
-EXEC add_etiqueta 'profe estay','serio' ;
+EXEC add_etiqueta 'profe boris','serio' ;
 
 /* Eliminar el procedimiento */
 DROP PROCEDURE add_etiqueta;
