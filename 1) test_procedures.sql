@@ -19,8 +19,10 @@ CREATE TABLE persona_etiqueta(
 	fk_persona INT,
 	fk_etiqueta INT,
 	PRIMARY KEY(id),
-	FOREIGN KEY(fk_persona) REFERENCES persona(id),
+	FOREIGN KEY(fk_persona) REFERENCES persona(id)
+	ON DELETE CASCADE,
 	FOREIGN KEY(fk_etiqueta) REFERENCES etiqueta(id)
+	ON DELETE CASCADE
 );
 
 INSERT INTO persona(nombre) VALUES('Profe Pato');
@@ -40,12 +42,9 @@ INSERT INTO persona_etiqueta(fk_persona, fk_etiqueta) VALUES('1','2');
 INSERT INTO persona_etiqueta(fk_persona, fk_etiqueta) VALUES('1','4');
 /* Profe pato es: profe, hombre y desarrollador*/
 
-
-
 SELECT * FROM persona;
 SELECT * FROM etiqueta;
 SELECT * FROM persona_etiqueta;
-
 
 
 /* Eliminar la base de datos */

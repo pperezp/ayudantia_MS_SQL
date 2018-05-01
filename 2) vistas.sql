@@ -13,9 +13,6 @@ CREATE VIEW getPersonas AS
 		ON pe.fk_etiqueta = e.id;
 
 
-GO
-
-
 /* Eliminar vista */
 DROP VIEW getPersonas;
 /* Eliminar vista */

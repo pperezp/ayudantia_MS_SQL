@@ -30,7 +30,7 @@ END
 
 EXEC add_etiqueta 'profe pato','ñoño' ;
 EXEC add_etiqueta 'profe boris','brigido' ;
-EXEC add_etiqueta 'profe boris','serio' ;
+EXEC add_etiqueta 'profe estay','despistado' ;
 
 /* Eliminar el procedimiento */
 DROP PROCEDURE add_etiqueta;
